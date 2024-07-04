@@ -1,3 +1,6 @@
 /BasketballPlayerApi/bin
 /BasketballPlayerApi/obj
 /.vs
+/BasketballPlayerApiTest/obj
+/BasketballPlayerApiTest/bin
+/TestResults
