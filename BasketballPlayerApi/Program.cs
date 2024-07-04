@@ -10,8 +10,8 @@ var builder = WebApplication.CreateBuilder( args );
 builder.Services.AddControllers();
 builder.Services.AddDbContext<SampleDatabaseContext>(options =>
 {
-    options.UseSqlServer( builder.Configuration.GetConnectionString( "DefaultConnection" ) );
-});
+    options.UseSqlServer( builder.Configuration.GetConnectionString( "ProductionConnection" ) ); // DefaultConnection"
+} );
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
 builder.Services.AddScoped<IPlayerRepository, PlayerRepository>();
